@@ -11,6 +11,9 @@
 #stringFJ = "Fim de Jogo!"
 #print(len(stringFJ))
 
+import adivinhacaoAndrehlb
+import forca_enforcadoAndrehlb
+
 def frases_asteriscos(stringFrase1, stringFrase2):
     tamanho = max(len(stringFrase1), len(stringFrase2)) + 6
     print(33 * "*")
@@ -24,7 +27,10 @@ print("Escolha o jogo:\n1|Advinhação\n2|Forca")
 print(33 * "*")
 escolhaJogos = int(input("Digite o número do jogo escolhido: "))
 if (escolhaJogos == 1):
-    print("Jogo da Advinhação")
+    print("Jogando Advinhação")
+elif(escolhaJogos == 2):
+    print("Jogando Forca")
+    
 
 print((12 + 7) * "*")
 print(3 * "*", "Fim de Jogo", 3 * "*")
