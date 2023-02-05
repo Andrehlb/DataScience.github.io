@@ -28,7 +28,7 @@ print(33 * "*")
 escolhaJogos = int(input("Digite o número do jogo escolhido: "))
 if (escolhaJogos == 1):
     print("Jogando Advinhação")
-    adivinhacaoAndrehlb.jogar_adivinhacao.py
+    advinhacaoAndrehlb.jogar_adivinhacao.py
 elif(escolhaJogos == 2):
     print("Jogando Forca")
     forca_enforcadoAndrehlb.jogar_forca.py
