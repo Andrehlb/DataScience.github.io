@@ -1,2 +1,3 @@
-stringEJ = "Escolha teu Jogo"
-print(len(stringEJ))
+stringFJ = "Fim de Jogo!"
+    print(len(stringBJA))
+    print(len(stringFJ))
