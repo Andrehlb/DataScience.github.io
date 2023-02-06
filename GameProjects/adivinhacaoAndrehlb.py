@@ -3,11 +3,12 @@ import random
 """ para arredondar o número:
 round(random.random() * 100) """
 # função int, que irá converter o número aleatório, que é um float, em um número inteiro
-int(random.random() * 100)
+def jogo_adivinhacao():
+    int(random.random() * 100)
 # função que arredonda esse número
-numero_random = random.random() * 100
-round(numero_random)
-def jogar_advinhacao():
+    numero_random = random.random() * 100
+    round(numero_random)
+
     print(33 * "*")
     #print("*********************************")
     print("Bem vindo ao jogo de Adivinhação!")
@@ -110,7 +111,8 @@ print(12 * "*")
 # @Author: André Luiz Barbosa (Andrehlb)
 # Desenvolve 2023 | GB | Alura Cursos Online
 # Path: #https://github.com/Andrehlb/dvelopment.github.io/blob/main/GameProjects/advinhacaoAndrehlb.py#L34
-
+if(__name__ == "__main__"):
+    jogo_adivinhacao()
 
 stringBJA = "Bem vindo ao jogo de Adivinhação!"
 stringFJ = "Fim de Jogo!"

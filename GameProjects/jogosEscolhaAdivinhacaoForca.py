@@ -12,26 +12,55 @@
 #print(len(stringFJ))
 
 import adivinhacaoAndrehlb
-import forca_enforcadoAndrehlb
+import forcaEnforcado_Andrehlb
 
+def escolhe_jogo():
+    print("*********************************")
+    print("******** Escolha teu Jogo! ******")
+    print("*********************************")
+    print("1|Advinhação\n2|Forca")
+    print("*********************************")
+    jogo = int(input("Digite o número do jogo escolhido: "))
+    if (jogo == 1):
+        print("Jogando Advinhação")
+        adivinhacaoAndrehlb.jogo_adivinhacao()
+    elif(jogo == 2):
+        print("Jogando Forca")
+        forcaEnforcado_Andrehlb.jogar_forca()
+    if(__name__ == "__main__"):
+        escolhe_jogo()
+        
 def frases_asteriscos(stringFrase1, stringFrase2):
-    tamanho = max(len(stringFrase1), len(stringFrase2)) + 6
+    tamanho = len(stringFrase1), len(stringFrase2) + 6
     print(33 * "*")
     print("*** {} ***" .format(stringFrase1.center(33 - 8)))
     print("*** {} ***" .format(stringFrase2.center(33 - 8)))
     print(33 * "*")
+
+""" frases_asteriscos("Escolha o jogo")
+print("1|Advinhação\n2|Forca")
+print(33 * "*")
+escolhaJogos = int(input("Digite o número do jogo escolhido: "))
+
+if (escolhaJogos == 1):
+    print("Jogando Advinhação")
+    adivinhacaoAndrehlb.jogo_adivinhacao()
+elif(escolhaJogos == 2):
+    print("Jogando Forca")
+    forcaEnforcado_Andrehlb.jogar_forca() """
+
  
-frases_asteriscos("Jogo da Advinhação", "Jogo da Forca")
+""" frases_asteriscos("Escolha o jogo")
 #line break in printing 
-print("Escolha o jogo:\n1|Advinhação\n2|Forca")
+print("1|Advinhação\n2|Forca")
 print(33 * "*")
 escolhaJogos = int(input("Digite o número do jogo escolhido: "))
 if (escolhaJogos == 1):
     print("Jogando Advinhação")
-    advinhacaoAndrehlb.jogar_adivinhacao.py
+    jogar_adivinhacao()
 elif(escolhaJogos == 2):
     print("Jogando Forca")
-    forca_enforcadoAndrehlb.jogar_forca.py
+    jogar_forca()"""
     
 
 print((12 + 7) * "*")

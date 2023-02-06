@@ -1,4 +1,6 @@
 import random
+#stringBVJF = "Bem Vindo ao Jogo da Forca!"
+#print(len(stringBVJF)) # 27 caracteres
 
 def jogar_forca():
     def frases_asteriscos(stringFrase):
@@ -95,5 +97,6 @@ def jogar_forca():
         print("Parabéns! Você ganhou!")
     else:
         print("Você perdeu! A palavra era", palavra_secreta)
-
-jogar_forca()
+print("Fim do jogo")
+if(__name__ == "__main__"):
+    jogar_forca()
