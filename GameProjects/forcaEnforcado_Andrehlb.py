@@ -78,7 +78,10 @@ def jogar_forca():
             print(" |      / \\")
             print("_|___")
 
+    # while (not acertou and not enforcou):
     while enforcamentos > 0 and "_" in letras_acertadas:
+        #chute = input("Qual letra? ")
+        #chute = chute.strip().lower() - fiz numa unica linha
         tentativa = input("Adivinhe uma letra: ").strip().lower()
         if tentativa in palavra_secreta:
             index = 0
