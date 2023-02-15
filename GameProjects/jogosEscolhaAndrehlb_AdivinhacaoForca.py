@@ -14,6 +14,7 @@
 import adivinhacaoAndrehlb
 import forcaEnforcado_Andrehlb
 
+
 def escolhe_jogo():
     print("*********************************")
     print("******** Escolha teu Jogo! ******")

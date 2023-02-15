@@ -1,4 +1,5 @@
 import random
+
 #random.random()
 """ para arredondar o número:
 round(random.random() * 100) """

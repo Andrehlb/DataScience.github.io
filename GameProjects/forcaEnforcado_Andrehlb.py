@@ -1,4 +1,5 @@
 import random
+
 #stringBVJF = "Bem Vindo ao Jogo da Forca!"
 #print(len(stringBVJF)) # 27 caracteres
 

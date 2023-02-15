@@ -1,5 +1,6 @@
 import random
 
+
 def frases_asteriscos(stringFrase):
     tamanho = len(stringFrase) + 6
     print(35 * "*")
