@@ -39,7 +39,9 @@ PRÓXIMA ATIVIDADE
 [00:58] Só que alguém, no futuro, como esses dois trechos de código estão em pontos distintos, vem e fala lista.append(13).
 https://github.com/Andrehlb/dvelopment.github.io/blob/5eaac24e13f6f71b18433e2d49497fe6899fa686/README.md#L34
 
-<img src="https://user-images.githubusercontent.com/100593932/222930575-5a9cf18e-18da-4d6d-b24e-ba5fa140f599.png", alt="using .padding()" />
+![using .append()]("Collections_Desenvolve2023_Alura/assets/images/aula04-time00-58.png")
+
+<!-- <img src="https://user-images.githubusercontent.com/100593932/222930575-5a9cf18e-18da-4d6d-b24e-ba5fa140f599.png", alt="using .padding()" /> -->
 
 def faz_processamento_de_visualizacao(lista):
   print(len(lista))
