@@ -15,17 +15,13 @@ AULA
 
 Atividades
 
-`<b>` 01. Introdução `</b>`
-02min
+## 01. Introdução | 02min
 
-`<b>` 02. Introdução as coleções e lista `</b>`
-11min
+## 02. Introdução as coleções e lista | 11min
 
-`<b>` 03. Mais operações em listas e list comprehension `</b>`
-13min
+## 03. Mais operações em listas e list comprehension | 13min
 
-`<b>` 04. Problemas da mutabilidade da lista `</b>`
-08min
+## 04. Problemas da mutabilidade da lista | 08min
 
 PRÓXIMA ATIVIDADE
 
@@ -44,8 +40,10 @@ faz_processamento_de_visualizacao(idades)
 
 Ao rodar o código, ele continua imprimindo o "5", porque chamamos o faz_processamento, que recebeu uma lista com cinco elementos.
 
+```
 5
 [16, 21, 29, 56, 43, 13]
+```
 
 [01:32] A lista é uma referência para um único objeto na memória, esse objeto na memória tem cinco posições (16, 21, 29, 56 e 43), então o que está acontecendo na memória é o que foi criado na linha 1 idades = [16, 21, 29, 56, 43. Portanto, foi criado um espaço na memória com esses valores. Ainda na linha 1, o que fizemos foi criar uma variável chamada idades que aponta para esses valores na memória.
 
@@ -84,8 +82,6 @@ def faz_processamento_de_visualizacao(lista = []):
     lista.append(13)  
     faz_processamento_de_visualizacao()  
 ```
-
-![lista-vazia e uso do .apppend()]()
 
 [04:30] Vou chamar faz_processamento_de_visualizacao, e não vou passar nada como parâmetro. Uma lista vazia será criada, vai imprimir "0", e adicionar 13. Em outras palavras, vai adicionar um elemento, mas imprimir 0, vamos ver?
 
@@ -127,8 +123,6 @@ faz_processamento_de_visualizacao()
 
 3
 ```
-
-![Lista vazia e valor referenciado por padrão.]()
 
 [05:57] Então começamos a adicionar cada vez mais, a lista fica cada vez maior. Se imprimirmos a lista em si, vamos ver que na primeira vez ela realmente está vazia, [], na segunda, ela tem o valor [13], depois o valor [13, 13], e depois [13, 13, 13]. Então, o valor está sendo alterado. Se quisermos colocar um valor padrão para um parâmetro que é mutável, por exemplo, sem manter o estado - que é o que estamos fazendo no caso de uma lista - o que precisamos fazer?.
 
@@ -175,11 +169,8 @@ def faz_processamento_de_visualizacao(lista = None):
 [07:27] E toda vez que chamamos essa nossa função vamos verificar, se é o valor padrão que é o None - se é nada - uma nova lista é criada. O código é executado todas as vezes, claro, mas só é analisado e executado uma única vez, mas não tem mais problema, porque se for None, vai criar uma lista nova, se for None de novo, vai criar uma lista nova de novo, e corrigimos o nosso erro.
 
 [07:58] É muito comum isso acontecer com listas. Então, não é recomendável colocar uma lista como parâmetro default, e, sim,None e verificar se é None, mas isso também se estende para outros objetos que você pode usar como parâmetro de valor opcional, que é mutável. Portanto, é sempre bom ter esse cuidado, listas e objetos que são mutáveis.
-`<br>`
-`<br>`
-`<br>`
-`<b>` 05. Removendo dados duplicados `</b>`
-09min
+
+## 05. Removendo dados duplicados
 
 Gabriel é programador e trabalha em uma escola dando aula de matemática. No fim do semestre, Gabriel passa as notas dos alunos para uma lista feita em Python que o ajuda no controle das notas. Um dia, acidentalmente, Gabriel duplicou as notas e precisava remover as duplicadas.
 
@@ -191,31 +182,46 @@ Como essa duplicidade pode ser removida?
 
 Selecione uma alternativa
 
-`<b>` A `</b>` Utilizando a função append para remover as notas duplicadas, o Python remove os elementos que estão por último no lista.
+A)
+
+ Utilizando a função append para remover as notas duplicadas, o Python remove os elementos que estão por último no lista.
 
 ```
 O append() adiciona um elemento ao final da lista, não remove.
 ```
 
-`<b>` B `</b>` Utilizando a função`remove()´ e passando como parâmetro a nota duplicada para ser excluída. Essa função vai retirar a primeira aparição da nota, resolvendo a duplicidade.
+<p> B) </p> Utilizando a função`remove()´ e passando como parâmetro a nota duplicada para ser excluída. Essa função vai retirar a primeira aparição da nota, resolvendo a duplicidade.
 
 ```
 Quando usamos a função `remove()´ ela vai percorrer nosso array e remover a primeira aparição do elemento que passamos como parâmetro.
 ```
 
-`<b>` C `</b>` Refazendo a lista e removendo os elementos manualmente, pois o Python não permite que sejam removidos elementos de uma lista.
+C)
+
+Refazendo a lista e removendo os elementos manualmente, pois o Python não permite que sejam removidos elementos de uma lista.
 
 ```
 Isto não precisa ser feito manualmente, o Python nos permite remover elementos com funções específicas.
 ```
 
-<br>
-<br>
-<br>
-<b> 06.Faça como... </b>
-<br>
-<br>
-<br>
+## 06.Faça como...
 
-`<b>` 07. O que aprendemos? `</b>`
-`<br>`
+## 07. O que aprendemos?
+
+O que aprendemos nesta aula:
+
+* O que é coleção;
+* Criar lista;
+* Verificar o tipo da lista e o tamanho da lista;
+* Mostrar na tela o valor conforme sua posição na lista;
+* Alterar valores que estão dentro da lista;
+* Adicionar valores no final da lista;
+* Percorrer a lista;
+* Remover elemento da lista;
+* Remover **todos** elementos da lista;
+* Verificar se o elemento está dentro da lista;
+* Inserir um elemento na posição que desejamos;
+* Utilizar um list comprehension;
+* Fazer filtragens;
+* Criar uma função e deixar um valor padrão;
+* Quais são os problemas da mutabilidade.
