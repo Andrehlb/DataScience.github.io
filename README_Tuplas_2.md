@@ -19,7 +19,15 @@ AULA02 - Tuplas
 
   A função `__init__`, a palavra " **init** " é o nome correto do método especial que é chamado automaticamente quando um objeto é criado a partir de uma classe, para inicializar seus atributos.
 
-  o método `__init__` deve ter parênteses vazios após o nome "init"
+  o método `__init__` deve ter parênteses vazios após o nome "init".
+
+  O traço duplo ("__") antes e depois do nome do método `__init__` é chamado de "dunder" (double underscore) ou "método especial". Isso indica que esse método é um método especial ou mágico em Python.
+
+  Os métodos especiais são chamados automaticamente pelo Python em certas situações, como quando um objeto é criado ou quando dois objetos são comparados. O método `__init__` é um método especial que é chamado automaticamente quando um objeto é criado a partir de uma classe. Ele é usado para inicializar os atributos do objeto e configurar seu estado inicial.
+
+  Por exemplo, se você criar uma instância da classe `contaCorrente` como `cc = contaCorrente(1234)`, o método `__init__` será chamado automaticamente e o atributo `codigo` será definido como `1234`.
+
+  Os métodos especiais em Python são uma parte importante da linguagem e permitem que você crie classes poderosas e flexíveis. Você pode criar seus próprios métodos especiais personalizados para definir o comportamento personalizado da sua classe em diferentes situações.
 
   Vamos receber também o código da conta, `codigo` para descobrirmos, por exemplo, se essa conta é a conta 15, a 37, seja qual for. Logo, `self.codigo = codigo`.
 
