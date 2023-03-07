@@ -15,16 +15,16 @@ AULA
 
 Atividades
 
-<b> 01. Introdução </b>
+`<b>` 01. Introdução `</b>`
 02min
 
-<b> 02. Introdução as coleções e lista </b>
+`<b>` 02. Introdução as coleções e lista `</b>`
 11min
 
-<b> 03. Mais operações em listas e list comprehension </b>
+`<b>` 03. Mais operações em listas e list comprehension `</b>`
 13min
 
-<b> 04. Problemas da mutabilidade da lista </b>
+`<b>` 04. Problemas da mutabilidade da lista `</b>`
 08min
 
 PRÓXIMA ATIVIDADE
@@ -34,11 +34,6 @@ PRÓXIMA ATIVIDADE
 [00:30] No caso das nossas idades, por exemplo, que são [16, 21, 29, 56, 43],chamamos a função faz_processamento_de_visualizacao(idades)] para imprimir o tamanho da lista, que, neste caso, é 5. Para conferir, imprimimos a lista de novo, idades, então, vai imprimir 5, que é o tamanho da lista e a lista de novo para conferirmos, [16, 21, 29, 56, 43].
 
 [00:58] Só que alguém, no futuro, como esses dois trechos de código estão em pontos distintos, vem e fala lista.append(13).
-<https://github.com/Andrehlb/dvelopment.github.io/blob/5eaac24e13f6f71b18433e2d49497fe6899fa686/README.md#L34>
-
-![using .append()]("Collections_Desenvolve2023_Alura/assets/images/aula04-time00-58.png")
-
-<!-- <img src="https://user-images.githubusercontent.com/100593932/222930575-5a9cf18e-18da-4d6d-b24e-ba5fa140f599.png", alt="using .padding()" /> -->
 
 def faz_processamento_de_visualizacao(lista):
   print(len(lista))
@@ -46,7 +41,7 @@ def faz_processamento_de_visualizacao(lista):
 
 idades = [16, 21, 29, 56, 43]
 faz_processamento_de_visualizacao(idades)
-COPIAR CÓDIGO
+
 Ao rodar o código, ele continua imprimindo o "5", porque chamamos o faz_processamento, que recebeu uma lista com cinco elementos.
 
 5
@@ -88,9 +83,9 @@ def faz_processamento_de_visualizacao(lista = []):
     print(len(lista))  
     lista.append(13)  
     faz_processamento_de_visualizacao()  
-```  
+```
 
-![lista-vazia e uso do .apppend()]("/workspaces/dvelopment.github.io/Collections_Desenvolve2023_Alura/assets/images/lista-vazia_append.png")
+![lista-vazia e uso do .apppend()]()
 
 [04:30] Vou chamar faz_processamento_de_visualizacao, e não vou passar nada como parâmetro. Uma lista vazia será criada, vai imprimir "0", e adicionar 13. Em outras palavras, vai adicionar um elemento, mas imprimir 0, vamos ver?
 
@@ -104,15 +99,17 @@ lista.append(13)
 faz_processamento_de_visualizacao()
 ```
 
-```  
+```
 0
-```  
-Imprimiu "0".  
+```
+
+Imprimiu "0".
 Ao chamar de novo, perceberemos que a lista está aumentando de tamanho. Repare que quando você coloca um valor padrão para um parâmetro de uma função no Python, esse padrão vai ser armazenado em algum lugar.
 
 [05:20] Então esse objeto, que é uma lista vazia, está armazenado na memória. Nós imprimimos o 0, e, nesse objeto, adicionamos o valor 13. Quando chamamos de novo o método sem parâmetro, a variável, por padrão, referencia o objeto que continua existindo. Então, o objeto padrão continuou existindo e sendo referenciado como objeto padrão - o valor a ser referenciado por padrão - por esse parâmetro.
 
-./Python  
+./Python
+
 ```
 faz_processamento_de_visualizacao()
 
@@ -131,7 +128,7 @@ faz_processamento_de_visualizacao()
 3
 ```
 
-![Lista vazia e valor referenciado por padrão.]("https://github.com/Andrehlb/dvelopment.github.io/blob/main/Collections_Desenvolve2023_Alura/assets/images/lista-vazia_valor-referenciado-por-pradrao.png")
+![Lista vazia e valor referenciado por padrão.]()
 
 [05:57] Então começamos a adicionar cada vez mais, a lista fica cada vez maior. Se imprimirmos a lista em si, vamos ver que na primeira vez ela realmente está vazia, [], na segunda, ela tem o valor [13], depois o valor [13, 13], e depois [13, 13, 13]. Então, o valor está sendo alterado. Se quisermos colocar um valor padrão para um parâmetro que é mutável, por exemplo, sem manter o estado - que é o que estamos fazendo no caso de uma lista - o que precisamos fazer?.
 
@@ -147,7 +144,8 @@ def faz_processamento_de_visualizacao(lista = list()):
 
 faz_processamento_de_visualizacao()
 faz_processamento_de_visualizacao()
-```  
+```
+
 ```
 0
 []
@@ -168,6 +166,7 @@ def faz_processamento_de_visualizacao(lista = None):
     print(lista)
     lista.append(13)
 ```
+
 ```
 6
 [16, 21, 29, 56, 43, 13]
@@ -176,10 +175,10 @@ def faz_processamento_de_visualizacao(lista = None):
 [07:27] E toda vez que chamamos essa nossa função vamos verificar, se é o valor padrão que é o None - se é nada - uma nova lista é criada. O código é executado todas as vezes, claro, mas só é analisado e executado uma única vez, mas não tem mais problema, porque se for None, vai criar uma lista nova, se for None de novo, vai criar uma lista nova de novo, e corrigimos o nosso erro.
 
 [07:58] É muito comum isso acontecer com listas. Então, não é recomendável colocar uma lista como parâmetro default, e, sim,None e verificar se é None, mas isso também se estende para outros objetos que você pode usar como parâmetro de valor opcional, que é mutável. Portanto, é sempre bom ter esse cuidado, listas e objetos que são mutáveis.
-<br>
-<br>
-<br>
-<b> 05. Removendo dados duplicados </b>
+`<br>`
+`<br>`
+`<br>`
+`<b>` 05. Removendo dados duplicados `</b>`
 09min
 
 Gabriel é programador e trabalha em uma escola dando aula de matemática. No fim do semestre, Gabriel passa as notas dos alunos para uma lista feita em Python que o ajuda no controle das notas. Um dia, acidentalmente, Gabriel duplicou as notas e precisava remover as duplicadas.
@@ -187,23 +186,24 @@ Gabriel é programador e trabalha em uma escola dando aula de matemática. No fi
 ```
 notas = [2, 2, 3, 5]
 ```
+
 Como essa duplicidade pode ser removida?
 
 Selecione uma alternativa
 
-<b> A </b> Utilizando a função append para remover as notas duplicadas, o Python remove os elementos que estão por último no lista.
+`<b>` A `</b>` Utilizando a função append para remover as notas duplicadas, o Python remove os elementos que estão por último no lista.
 
 ```
 O append() adiciona um elemento ao final da lista, não remove.
 ```
 
-<b> B </b> Utilizando a função`remove()´ e passando como parâmetro a nota duplicada para ser excluída. Essa função vai retirar a primeira aparição da nota, resolvendo a duplicidade.
+`<b>` B `</b>` Utilizando a função`remove()´ e passando como parâmetro a nota duplicada para ser excluída. Essa função vai retirar a primeira aparição da nota, resolvendo a duplicidade.
 
 ```
 Quando usamos a função `remove()´ ela vai percorrer nosso array e remover a primeira aparição do elemento que passamos como parâmetro.
 ```
 
-<b> C </b> Refazendo a lista e removendo os elementos manualmente, pois o Python não permite que sejam removidos elementos de uma lista.
+`<b>` C `</b>` Refazendo a lista e removendo os elementos manualmente, pois o Python não permite que sejam removidos elementos de uma lista.
 
 ```
 Isto não precisa ser feito manualmente, o Python nos permite remover elementos com funções específicas.
@@ -217,5 +217,5 @@ Isto não precisa ser feito manualmente, o Python nos permite remover elementos 
 <br>
 <br>
 
-<b> 07. O que aprendemos? </b>
-<br>
+`<b>` 07. O que aprendemos? `</b>`
+`<br>`
