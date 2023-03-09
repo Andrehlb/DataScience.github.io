@@ -12,6 +12,22 @@ usuarios
 COPIAR CÓDIGO
 ```
 
+Vai ocorrer erro na sintaxe, porque as strings 'Andrhelb' e 'Rafa' precisam estar entre aspas, caso contrário o Python irá interpretá-las como variáveis.
+
+```
+
+usuarios = ['Andrhelb', 'Rafa']
+
+usuarios
+
+[('Andrhelb', 37, 1981), ('Rafa', 31, 1987)]
+```
+
+```
+[('Andrhelb', 37, 1981), ('Rafa', 31, 1987)]
+```
+
+
 [00:30] Eu estou misturando as duas coisas, o “usuario” é uma tupla, que é o nome, idade, ano de nascimento. Então, eu tenho uma lista com todos os meus usuários. Usei uma lista para representar todos os meus usuários, porque eu decidi que, com o passar do tempo do meu sistema, eu vou ter usuários novos.
 
 [00:50] Por exemplo, `usuarios.append()` o Paulo. Como eu representaria o Paulo? Estamos usando tupla para representar o usuário de uma maneira curta, rápida e que faz sentido nesse contexto.
