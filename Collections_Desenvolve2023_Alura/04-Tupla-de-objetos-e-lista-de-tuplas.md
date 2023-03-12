@@ -27,6 +27,17 @@ usuarios
 [('Andrhelb', 37, 1981), ('Rafa', 31, 1987)]
 ```
 
+Se eu quiser criar essa lista a partir da lista original `usuarios`, posso fazer uso de uma **compreensão de lista**, onde a cada elemento da lista original é adicionada uma tupla contendo o nome do usuário, sua idade (calculada subtraindo seu ano de nascimento do ano atual) e o ano de nascimento:
+
+```
+from datetime import dateusuarios = ['Andrhelb', 'Rafa']
+ano_atual = date.today().year
+usuarios = [(u, ano_atual - 1981 if u == 'Andrhelb' else ano_atual - 1987, 1981 if u == 'Andrhelb' else 1987) for u in usuarios]
+```
+
+A compreensão de lista acima, usei a biblioteca `datetime` para obter o ano atual. 
+
+Além disso, assumi que o ano de nascimento da pessoa com o nome 'Andrhelb' era 1981 e da pessoa com o nome 'Rafa' era 1987. Esses valores podem ser atualizados conforme necessário.
 
 [00:30] Eu estou misturando as duas coisas, o “usuario” é uma tupla, que é o nome, idade, ano de nascimento. Então, eu tenho uma lista com todos os meus usuários. Usei uma lista para representar todos os meus usuários, porque eu decidi que, com o passar do tempo do meu sistema, eu vou ter usuários novos.
 
