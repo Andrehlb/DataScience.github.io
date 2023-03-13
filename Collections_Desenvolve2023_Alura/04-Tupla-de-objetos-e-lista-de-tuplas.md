@@ -120,3 +120,14 @@ Note que eu só usei a tupla com a característica de ser imutável. Foi o únic
 [06:10] A tupla não costuma ser usada nesses cenários. É mais comum que ela seja usada naquele cenário que eu tinha dito antes, quando você tem uma sequência em que cada posição quer dizer uma coisa diferente, isto é, as posições têm significado. Aqui, da maneira que eu usei, não tem significado, poderia ser `(conta_da_dani, conta_do_gui)`, `(conta_do_gui, conta_da_dani)`, quantas contas fossem, em uma ordem ou outra, de ponta cabeça, são as contas do banco.
 
 [06:37] Eu usei a tupla só para ter a imutabilidade, ela não costuma ser usada dessa maneira, mas eu queria mostrar que existe a mistura, você pode colocar objeto dentro de tupla, lista dentro de tupla, tupla dentro de lista, objeto dentro de lista, pode fazer um mix e esse mix traz consequências. Precisamos sempre pensar que: a tupla não vai mudar de tamanho, mas quem está dentro pode mudar as referências de dentro. É isso que precisamos considerar quando pensamos sobre as tuplas.
+
+07
+O que aprendemos?
+
+Criar uma classe e métodos;
+Criar uma lista de referência para objetos;
+Lidar com referências;
+O que é uma tupla;
+Fazer tupla de listas;
+Diferença entre programação orientada a objetos e funcional;
+Fazer uma lista de tuplas.
