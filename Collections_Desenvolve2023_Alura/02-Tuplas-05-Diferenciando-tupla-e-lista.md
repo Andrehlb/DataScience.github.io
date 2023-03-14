@@ -1,12 +1,12 @@
-05
-Diferenciando tupla e lista
+05 Diferenciando tupla e lista
 PRÓXIMA ATIVIDADE
 
 Estamos estudando tuplas e listas. Temos um conjunto de dados que nos foi dado e precisamos adicionar cada conjunto em seu devido lugar. Os dados desses conjuntos são o saldo e agência bancária (o valor de agência bancária é imutável):
 
 agencia = [10, 22, 33, 44]
 
-saldo =  [1000, 2000, 3000, 4000]COPIAR CÓDIGO
+saldo =  [1000, 2000, 3000, 4000]
+
 Qual a melhor forma de declarar cada um desses valores?
 
 Selecione uma alternativa
