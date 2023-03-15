@@ -56,7 +56,8 @@ conta16.passa_o_mes()
 print(conta16)
 
 [>>Codigo 16 Saldo 998<<]
-COPIAR CÓDIGO
+
+
 [02:50] O resultado é que a conta16 tem 998, porque tirou 2 reais. Agora faremos a mesma coisa com a conta17, só que ela é uma ContaPoupanca que depositou 1000 reais.
 
 conta17 = ContaPoupanca(17)
@@ -65,7 +66,7 @@ conta17.passa_o_mes()
 print(conta17)
 
 [>>Codigo 17 Saldo 1007.0<<]
-COPIAR CÓDIGO
+
 [03:14] Então, a conta17 terminou com 1007 reais. Por enquanto, é o tradicional: você instanciou um objeto e só usou a herança para ter o construtor padrão da classe anterior, o direito ao método deposita, ter os atributos que foram inicializados no __init__, você teve tudo isso de acesso.
 
 [03:35] Onde entra o polimorfismo? Na nossa lista, na nossa sequência. Se eu tenho uma lista de contas, a conta 16 e a 17, contas = [conta16, conta17]. Eu vou reinicializar essas duas contas para que fique claro para nós o que acontece todas as vezes.
