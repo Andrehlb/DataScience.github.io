@@ -75,12 +75,13 @@ conta16 = ContaCorrente(16)
 conta16.deposita(1000)
 conta17 = ContaPoupanca(17)
 conta17.deposita(1000)
-contas = [conta16, conta17]COPIAR CÓDIGO
-[03:57] Agora, eu quero passar por todas as contas, então for conta in contas: e eu vou passar o mês, conta.passa_o_mes(). Não importa se dentro da lista eu tenho ContaCorrente ou ContaPoupanca, o que importa é que tenha o passa_o_mes().
+contas = [conta16, conta17]
+
+[03:57] Agora, eu quero passar por todas as contas (para onde?), então for conta in contas: e eu vou passar o mês, conta.passa_o_mes(). Não importa se dentro da lista eu tenho ContaCorrente ou ContaPoupanca, o que importa é que tenha o passa_o_mes().
 
 for conta in contas:
   conta.passa_o_mes() # duck typing
-COPIAR CÓDIGO
+
 Na prática, é o duck typing que vemos quando falamos de orientação objeto. Se ele responde como um pato, se ele faz “duck” como um pato, então eu posso pedir para ele fazer "duck".
 
 [04:30] Então, se responde ao passa_o_mes(), então passa o mês, por favor. No meu caso, eu fiz de uma maneira simples que foi definir o método nas duas classes filhas. Quer dizer que a classe mãe não está definida nesse caso. Posso rodar e sempre que eu atualizar eu posso imprimir essa conta. Eu estou utilizando uma lista, poderia ser uma tupla, poderia ser o que for dentro da categoria sequência de contas iterável, e passando por elas para fazer isso.
