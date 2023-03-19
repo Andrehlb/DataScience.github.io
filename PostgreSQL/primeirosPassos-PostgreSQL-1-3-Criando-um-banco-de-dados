@@ -18,7 +18,6 @@ List of databse
 | template0 | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 | =c/postgres + <br> postgres=CTc/postgres |
 | template1 | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 | =c/postgres + <br> postgres=CTc/postgres |COPIAR CÓDIGO
 
-![Exemplo de imagem](https://github.com/Andrehlb/dvelopment.github.io/blob/e16f348de35fdc47083a09e3f145e851af649337/PostgreSQL/Assets/Images/criando_database_pgadmin.png "criando_database_pgadmin")
 
 Podemos ver que o banco "alura" foi criado e que já tínhamos bancos, chamados "postgres", "template0" e o "template1". Basicamente é assim que criamos um banco de dados. Já definimos o banco "alura" com o Enconding UTF8 e Owner postgres.
 
@@ -28,8 +27,7 @@ Primeiramente, para visualizar o banco que acabamos de criar, clicamos em Databa
 
 Antes disso, vamos clicar em Database com o botão direito, passar o mouse sobre a opção create e clicar na pção "Database" que surge em seguida.
 
-![Exemplo de imagem](https://example.com/image.jpg "Título da imagem")
-
+![Exemplo de imagem](https://github.com/Andrehlb/dvelopment.github.io/blob/e16f348de35fdc47083a09e3f145e851af649337/PostgreSQL/Assets/Images/criando_database_pgadmin.png "criando_database_pgadmin")
 
 Guia de comandos para abrir a janela de criação do database
 
