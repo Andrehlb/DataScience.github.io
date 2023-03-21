@@ -117,8 +117,57 @@ Com isso veremos a tabela, que agora está vazia, na guia *Data output* abaixo d
 
 ![Tabela vazia na guia Data output, abaixo do editor de códigos, indicada por uma seta vermelha](https://caelum-online-public.s3.amazonaws.com/1659-postgreSQL-Primeiros-passos-com-SQL/Transcri%C3%A7%C3%A3o/Aula+1/Imagens/tabela_no_banco_de_dados.png)
 
-Na próxima aula aprenderemos como incluir os dados nessa tabela com todos esses tipos de campo.
+# 06**Tabela de empresa**
 
-CONTINUAR LENDO
+Você está trabalhando em um projeto em que seus clientes precisam cadastrar alguns dados das empresas que são suas parceiras. Em uma reunião para definir quais dados os seus clientes precisam, ficou acordado as seguintes colunas:
 
-[ DI](https://cursos.alura.com.br/forum/curso-introducao-postgresql-primeiros-passos/exercicio-criando-uma-tabela/72573/novo)
+* Um identificador numérico, sem casas decimais, que deve ser incrementado automaticamente
+* O CNPJ
+* A razão social
+* O nome fantasia
+* A data de abertura da empresa
+
+Quais das alternativas abaixo representa o comando SQL para criar a tabela que armazenará os dados das empresas?
+
+Selecione uma alternativa*  [ ]
+
+```sql
+  CREATE TABLE empresas (
+      id INTEGER,
+      cnpj INTEGER,
+      razao_social VARCHAR(255),
+      nome_fantasia VARCHAR(255),
+      data_abertura DATE
+  );
+```
+
+* [ ]
+  ```sql
+  CREATE TABLE empresas (
+      id SERIAL,
+      cnpj INTEGER,
+      razao_social VARCHAR(255),
+      nome_fantasia VARCHAR(255),
+      data_abertura DATA
+  );
+  ```
+* [ ]
+  ```sql
+  CREATE TABLE empresas (
+      id SERIAL,
+      cnpj CHAR(14),
+      razao_social VARCHAR(255),
+      nome_fantasia VARCHAR(255),
+      data_abertura DATE
+  );
+  ```
+* [ ]
+  ```sql
+  CREATE TABLE empresas (
+      id SERIAL,
+      cnpj CHAR(14),
+      razao_social REAL,
+      nome_fantasia BOOLEAN,
+      data_abertura DATE
+  );
+  ```

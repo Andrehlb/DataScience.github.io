@@ -11,13 +11,13 @@ Atenção: Sempre que digitar um comando no prompt de comandos do SQL Shell (psq
 Para visualizar os bancos de dados já estão no nosso postgres, podemos usar o comando \l. Quando apertamos "Enter", aparece a seguinte tabela:
 
 List of databse
-| Name      | Owner    | Encoding | Collate                | Ctype                  | Access privileges                        |
-|-----------|----------|----------|------------------------|------------------------|------------------------------------------|
-| alura     | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 |                                          |
-| postgres  | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 |                                          |
-| template0 | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 | =c/postgres + <br> postgres=CTc/postgres |
-| template1 | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 | =c/postgres + <br> postgres=CTc/postgres |COPIAR CÓDIGO
 
+| Name      | Owner    | Encoding | Collate                | Ctype                  | Access privileges                           |
+| --------- | -------- | -------- | ---------------------- | ---------------------- | ------------------------------------------- |
+| alura     | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 |                                             |
+| postgres  | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 |                                             |
+| template0 | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 | =c/postgres +`<br>` postgres=CTc/postgres |
+| template1 | postgres | UTF8     | Portuguese_Brazil.1252 | Portuguese_Brazil.1252 | =c/postgres +`<br>` postgres=CTc/postgres |
 
 Podemos ver que o banco "alura" foi criado e que já tínhamos bancos, chamados "postgres", "template0" e o "template1". Basicamente é assim que criamos um banco de dados. Já definimos o banco "alura" com o Enconding UTF8 e Owner postgres.
 
