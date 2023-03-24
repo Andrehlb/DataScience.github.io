@@ -89,3 +89,43 @@ Na prática, é o duck typing que vemos quando falamos de orientação objeto. S
 [05:00] Então repare que temos os benefícios de polimorfismo através do uso de objetos em que podemos iterar, como uma lista, uma tupla ou qualquer outra coisa. Em geral, não vamos usar isso com tuplas dessa maneira, porque lembra que eu falei de tuplas? O uso recomendado em geral utilizado de tuplas é que cada posição tem um significado diferente. Do contrário, a lista passa por todos os elementos, porque eles devem ser tratados da mesma maneira.
 
 [05:30] Então essa é a grande diferença muito comum de utilizarmos entre tuplas e listas, e por isso que eu estou trabalhando com lista nesse cenário.
+
+03 Arrays e Numpy
+
+[00:00] Eu comentei no passado que, no Python, vamos ter as listas e as tuplas. Naquele momento, na verdade, eu não falei das tuplas, mas eu comentei que às vezes usávamos o termo array como uma maneira genérica de dizer uma sequência de elementos que temos acesso aleatório, a posição 3, posição 5, posição 7. No Python existe o termo array, o tipo array, a diferença é que temos que importar.
+
+[00:33] Eu vou definir aqui: “array, evitaremos usar”. Vamos evitar usar um array padrão do Python, o array padrão do Python é super específico. Então, vamos importar import array as arr e quando eu quero instanciar um array, então, arr.array(), sendo arruma abreviação que eu fiz. Então, eu falo qual o tipo de array que eu quero criar? Eu quero um tipo específico para números com ponto flutuante, que é o tipo d.
+
+import array as arr
+
+arr.array('d', [])
+
+[01:05] E eu passo uma lista com os números, se eu estiver instanciando desta maneira o meu array. Por exemplo, o número um e o três vírgula cinco: [1, 3.5]. Desta maneira, vamos rodar e eu estou instanciando um array de verdade do Python.
+
+import array as arr
+
+arr.array('d', [1, 3.5])
+
+array('d', [1.0. 3.5])
+ 
+Se você procurar o array do Python, pesquisando no google “python documentation array”, você vai encontrar a informação, disponível neste link de que o array serve justamente para você ter uma eficácia maior quando estivermos trabalhando principalmente com números.
+
+[01:40] Então o array do Python tem um tipo específico. Por que tem um tipo específico? Por que eu tive que falar o tipo do meu array? Porque no array do Python, se eu quiser criar um array, eu tenho que falar o tipo e todos os elementos têm que ser desse tipo. Se eu tentar colocar uma string aqui, arr.array('d', [1, 3.5, 'Guilherme']), não vai funcionar.
+
+O motivo é que quando ele cria um array internamente, as arrays do Python - a palavra array que é um tipo de proposta - tipo array vai tentar armazenar os valores de uma maneira eficiente, vai tentar otimizar os processamentos em cima desses valores de uma maneira mais eficiente.
+
+[02:10] Para o dia a dia usual do Python vamos usar as listas. Já em situações específicas, em que temos um conjunto bem pequeno de elementos onde cada posição indica uma coisa, é comum usar as tuplas. E onde costuma ser importante um alto desempenho de funções matemáticas com Python, é muito comum utilizarmos uma biblioteca do Python, a numpy.
+
+[02:50] Portanto costumamos usar a numpy, disponível neste link. Não costumamos usar o array do Python, usamos o numpy Para isso, fazemos import numpy as np. se você não tiver o numpy instalado, precisa instalar, na linha de comando o que você faria seria um !pip install numpy. Eu estou instalando dentro de um Jupiter Notebook, então coloco a exclamação na frente.
+
+[03:25] É comum que essa linha seja a primeira de todas no código, ficando na parte de cima, mas você vai perceber que o numpy, na verdade, já vem instalado no Google Colab, não precisa instalar. Mas, na sua máquina, talvez você queira dar um pip install numpy, ou no seu Jupiter Notebook, você talvez queira dar um !pip install numpy, esse comando mágico com exclamação.
+
+[03:45] Continuando, fizemos import numpy as np, em seguida, faremos np.array() e eu passo a minha lista, [1, 3.5]. Eu tenho a minha lista, que é o meu array, agora do numpy, então isso aqui são os meus números, se eu quiser eu imprimo esses números e o numpy tem uma série de funções, que utilizamos principalmente quando estamos fazendo o Data Science,engenharia cientifica, programação científica, etc.
+
+[04:15] Por exemplo, eu posso somar 3 nesses números, numeros + 3. Se eu somar 3, eu estou somando 3 nos dois elementos, que é uma única dimensão e etc. Então, o Python tem várias funcionalidades super úteis de otimização e de facilidade na escrita e interpretação do código. É muito mais comum que, quando você quer um desempenho alto na parte matemática, em utilização de arrays e matrizes, você vá para o mundo do numpy. Isso é mais comum do que ir para o mundo de arrays do próprio Python.
+
+[04:45] Na prática, o array, em si, acabamos não usando. Vou anotar que # evitaremos usar array puro,se precisamos de trabalho numérico, é costume usar o numpy. Esse é o costume, não significa que é regra, 100% das vezes, mas é o que você vai ver todo mundo utilizando no mundo de Data Science, de ciência de dados é o numpy. Eu queria mostrar para vocês que existe a array nativa, existe a array que é um tipo, mas que chamamos de array e já vem com o Python, só que tem algumas restrições justamente para otimização.
+
+[05:28] Mas quando vamos trabalhar com otimização, é muito mais comum trabalharmos com numpy, cada um tem o seu caso, é muito mais comum o numpy.
+
+CONTINUAR LENDO
