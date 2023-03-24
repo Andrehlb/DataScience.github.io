@@ -1,0 +1,10 @@
+# dados do conjunto saldo e conta bancária
+# valor de agência bancária é imutável
+agenicia = [10, 22, 33, 44]
+
+saldo = [1000, 2000, 3000, 4000]
+# melhor forma de declarar
+# tupla
+agencia = (10, 22, 33, 44)
+# lista
+saldo = [1000, 2000, 3000, 4000]
