@@ -1,6 +1,5 @@
 04
 Método abstrato
-PRÓXIMA ATIVIDADE
 
 Play Video
 Transcrição
