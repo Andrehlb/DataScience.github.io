@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "ms-vscode.vscode-python-web-wasm"
+        "ms-vscode.vscode-python-web-wasm",
+        "github.copilot",
+        "github.copilot-labs",
+        "github.copilot-nightly"
     ]
 }
