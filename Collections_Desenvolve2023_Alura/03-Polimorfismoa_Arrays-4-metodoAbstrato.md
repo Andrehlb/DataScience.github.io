@@ -22,7 +22,7 @@ class ContaInvestimento(Conta):
   pass
 
 ContaInvestimento(764)
-COPIAR CÓDIGO
+
 [00:50] Que seria estranho, porque eu gostaria, como criador da classe Conta, que todo mundo que herda da classe Conta tivesse o método passa_o_mes(). Portanto, o que eu queria era colocar o método passa_o_mes() e, de alguma maneira, jogar um erro do tipo NotImplementedError, caso você chame esse método.
 
 class Conta:
@@ -36,7 +36,7 @@ class Conta:
 
   def __str__(self):
     return "[>>Codigo {} Saldo {}<<]".format(self.codigo, self.saldo)
-COPIAR CÓDIGO
+
 Então se você chamar esse método, eu vou dar um erro. Mas você só vai descobrir esse erro se chamar o método. Através de uma classe que não sobrescreveu o método.
 
 [01:25] Só nesse instante você descobriria. O que podemos fazer? Nas últimas versões do Python, podemos dizer que eu não implemento esse método, dar um pass e podemos decorar com uma anotação, um decorator, dizendo que é um método abstrato, um @abstractmethod. Então, eu não estou implementando.
@@ -56,7 +56,7 @@ class Conta:
 
   def __str__(self):
     return "[>>Codigo {} Saldo {}<<]".format(self.codigo, self.saldo)
-COPIAR CÓDIGO
+
 [01:45] Faltou importar o que eu tenho que importar. Para isso, eu faço from abc import ABCMeta, abstractmethod. Usamos o ABCmeta como uma meta classe, metaclass. É uma configuração que precisamos colocar: class Conta(metaclass=ABCMeta):. O abstractmethod já está no nosso código, mais abaixo.
 
 from abc import ABCMeta, abstractmethod
