@@ -51,7 +51,7 @@ class Conta:
       self._saldo += valor
 
     @abstractmethod
-    def passa_o_mes(sef)
+    def passa_o_mes(self):
       pass
 
   def __str__(self):
@@ -76,7 +76,7 @@ class Conta(metaclass=ABCMeta):
 
   def __str__(self):
     return "[>>Codigo {} Saldo {}<<]".format(self.codigo, self.saldo)
-COPIAR CÓDIGO
+
 [02:15] Agora vou rodar o código, interpretou e vou tentar criar uma conta normal. Já deu erro, porque a classe Conta virou uma classe abstrata. Ela tem um método abstrato e não pode ser instanciada, porque ainda não implementaram todos os métodos abstratos, o método passa_o_mês().
 
 [02:30] Agora, se eu criar essas 3 classes, tudo bem.
@@ -94,7 +94,7 @@ class ContaPoupanca(Conta):
 
 class ContaInvestimento(Conta):
   pass
-COPIAR CÓDIGO
+
 Porém, na hora que eu tentar instanciar uma ContaInvestimento, já dá erro. As outras classes funcionam, o que não funciona é aquilo que criamos sem implementar o método abstrato, esse é o único que não funciona.
 
 [02:56] Então, a sacada é: se você tem um método que você quer definir na sua classe mãe e que todo mundo seja forçado a implementar, coloque um @abstractmethod nela, defina ela como uma classe abstrata através da meta classe ABCmeta.
